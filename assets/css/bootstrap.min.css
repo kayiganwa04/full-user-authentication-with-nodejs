@@ -5,7 +5,9 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap");
-
+html {
+    height: 100%;
+  }
 :root {
     --blue                  : #375a7f;
     --indigo                : #6610f2;
@@ -66,13 +68,13 @@ section {
 
 body {
     margin          : 0;
-    font-family     : "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: sans-serif;
     font-size       : 0.9375rem;
     font-weight     : 400;
     line-height     : 1.5;
     color           : #fff;
     text-align      : left;
-    background-color: #222
+    background: linear-gradient(#141e30, #243b55);
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -86,6 +88,30 @@ hr {
     overflow          : visible
 }
 
+/* added css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* end of added css */
 h1,
 h2,
 h3,
@@ -5539,6 +5565,19 @@ input[type="button"].btn-block {
 }
 
 .card {
+    width: 400px;
+    padding: 40px;
+    transform: translate(20%, 20%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+
+
+
+
+
+
+
     position             : relative;
     display              : -webkit-box;
     display              : -ms-flexbox;
@@ -5549,10 +5588,10 @@ input[type="button"].btn-block {
     flex-direction       : column;
     min-width            : 0;
     word-wrap            : break-word;
-    background-color     : #303030;
     background-clip      : border-box;
     border               : 1px solid rgba(0, 0, 0, 0.125);
-    border-radius        : 0.25rem
+    border-radius: 10px;
+
 }
 
 .card>hr {
